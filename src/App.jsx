@@ -1,9 +1,12 @@
-import LongForm from "./example1/LoginForm";
+import { RouterProvider } from "react-router-dom";
+import routes from "./routes/routes";
+// import LongForm from "./example1/LoginForm";
 
 function App() {
   return (
     <>
-      <LongForm />
+      {/* <LongForm /> */}
+      <RouterProvider router={routes} />
     </>
   );
 }
