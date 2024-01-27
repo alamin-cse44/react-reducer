@@ -29,6 +29,11 @@ export const productReducer = (state, action) => {
         error: true,
         loading: false,
       };
+    case actionTypes.ADD_TO_CART:
+      return {
+        ...state,
+        cart: [...state.cart, action.payload],
+      };
     default:
       return state;
   }
